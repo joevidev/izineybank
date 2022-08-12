@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .main-container {
+    @apply w-full max-w-3xl sm:mt-14 mx-auto overflow-hidden sm:rounded-xl shadow-lg bg-white border-2 border-slate-800  text-slate-100 text-lg
+  }
+
+  .headline {
+    @apply text-xl p-2 text-center sm:text-left text-4xl sm:py-5 border-b-2 border-slate-800 sm:px-10  bg-white font-bold text-gray-400
+  }
+  .headline-gradient {
+    @apply bg-clip-text text-transparent bg-black
+  }
+
+  .form-style {
+    @apply flex flex-col border rounded-lg border-gray-900
+  }
+
+  .input-style{
+    @apply px-6 py-3 text-gray-500 border-none rounded-t-lg focus:ring-gray-500/[.100] placeholder-gray-400 
+  }
+
+  .btn-purple {
+    @apply font-bold px-4 py-3 text-sm rounded-lg border-t border-black tracking-wider text-gray-700 uppercase transition-colors duration-200 transform bg-green-300  hover:bg-green-400
+  }
+
+  .btn-grey {
+    @apply px-4 py-3 text-sm font-medium tracking-wider rounded-lg border-t border-black text-gray-700 uppercase transition-colors duration-200 transform bg-green-300 hover:bg-green-400
+  }
+
+  .btn-connect{
+    @apply bg-green-300 border border-black rounded-lg px-5 py-3 mt-5 rounded-lg text-slate-700 font-bold transition-colors duration-200 transform bg-green-300  hover:bg-green-400 z-30
+  }
+
+  .bank-owner-section{
+    @apply bg-white text-black w-4/5 mx-auto border-2 rounded-xl border-gray-500 mb-10
+  }
+
+}
+
